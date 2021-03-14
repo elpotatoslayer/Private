@@ -28,7 +28,7 @@ To get this project up and running locally, you must already have ruby and neces
 
 1. Open Terminal.
 2. Navigate to your desired location to download the contents of this repository.
-3. Copy and paste the following code into the Terminal: `git clone https://github.com/Ralph-1/Private_Events.git`
+3. Copy and paste the following code into the Terminal: `https://github.com/Ralph-1/Private.git`
 4. Run ```cd private-events```.
 5. Run ```bundle install``` to get the necesary gems.
 6. Run ```yarn```
