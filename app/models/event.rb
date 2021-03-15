@@ -7,6 +7,6 @@ class Event < ApplicationRecord
   scope :past_events, -> { where('date < ?', Date.today) }
 
   validates :date, presence: true
-  validates :location, presence: true, length: { minimum: 5, maximum: 30 }
+  validates :location, presence: true, length: { maximum: 30 }
   validates :description, presence: true, length: { minimum: 5, maximum: 1000 }
 end
