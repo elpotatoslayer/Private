@@ -4,9 +4,7 @@
 <section class="attendants">
   <h3 class="h4">People attending/attended this event:</h3>
   <ul class="attendants-list">
-  <% @event.attendees.each do |attendee| %>
-    <li><%= attendee.name %></li>
-  <% end %>
+   <%= event_attendees %>
   </ul>
 </section>
 <%= link_to 'Back', events_path, class: 'btn btn-primary' %>

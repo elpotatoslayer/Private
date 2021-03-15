@@ -1,0 +1,16 @@
+  <% @past_events.each do |event| %>
+      <div class="col-md-4">
+        <div class="card my-2">
+          <div class="card-header bg-info font-weight-bold h3">
+            Event Details
+          </div>
+          <%= link_to event_path(event) do %>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">- <strong>Date:</strong> <%= event.date %></li>
+              <li class="list-group-item">- <strong>Location:</strong> <%= event.location %></li>
+              <li class="list-group-item">- <strong>Description:</strong> <%= event.description %></li>
+            </ul>
+          <% end %>
+        </div>
+      </div>
+    <% end %>

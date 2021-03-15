@@ -15,7 +15,15 @@ module EventsHelper
     end
   end
 
-  def errors
-    render '/events/errors' if @event.errors.any?
+  def upcoming_events
+    render '/events/upcoming_events'
+  end
+
+  def past_events
+    render '/events/past_events'
+  end
+
+  def event_attendees
+    render '/events/attendees'
   end
 end
